@@ -5,6 +5,7 @@
     <meta http-equiv="“Pragma”" content="”no-cache”" />
     <meta http-equiv="“Expires”" content="”-1″" />
     <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -12,50 +13,96 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <!-- CSS Stylesheets -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../Meteo/assets/css/reset.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../Meteo/assets/css/style.css"
-    />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <title>API Project</title>
   </head>
 
   <body>
-    <h1>Meteo EuroWeather</h1>
-    <h2>7Days Weather Display</h2>
-
-    <div>
-      <p>Select a place to show the weather:</p>
-      <p>dropdown list with places to select</p>
-      <label for="City">City: </label>
-      <select name="city" id="city">
-        <option value="Toronto">Toronto</option>
-      </select>
+    <div class="container">
+      <header>
+        <h1>Meteo EuroWeather</h1>
+      </header>
     </div>
 
-    <div id="weatherReport">
-      <ul>
-        <img src="" alt="" />
-        <li>descricao</li>
-        <li>temperatura max</li>
-        <li>temperatura min</li>
-      </ul>
+    <div class="container">
+      <h2>7Days Weather Display</h2>
     </div>
+
+    <main>
+      <div class="container">
+        <p>Select a place to show the weather:</p>
+        <label for="City">City: </label>
+        <select name="city" id="city">
+          <option value="Toronto">Toronto</option>
+          <option value="Montreal">Montreal</option>
+          <option value="Vancouver">Vancouver</option>
+        </select>
+      </div>
+
+      <div class="container" id="weatherReport">
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+        <ul>
+          <img src="" alt="" />
+          <li>dia</li>
+          <li>descricao</li>
+          <li>temperatura max</li>
+          <li>temperatura min</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <br />
+      <hr />
+      <br />
+      <p class="copyright-text">© Copyright 2023 @CRBB</p>
+    </footer>
   </body>
-
-  <footer>
-    <br />
-    <hr />
-    <br />
-    <p class="copyright-text">© Copyright 2023 @CRBB</p>
-  </footer>
 
   <!-- Our codes -->
   <script src="../Meteo/assets/js/main.js"></script>
