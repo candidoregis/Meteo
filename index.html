@@ -1,34 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv=“Pragma” content=”no-cache”>
-    <meta http-equiv=“Expires” content=”-1″>
-    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-    <!-- Bootstrap -->   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="../Meteo/assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../Meteo/assets/css/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Meteo/assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Meteo/assets/css/style.css"
+    />
 
     <title>API Project</title>
-</head>
+  </head>
 
-<body>
-
-    <h1>Meteo EuroWeather </h1>
+  <body>
+    <h1>Meteo EuroWeather</h1>
     <h2>7Days Weather Display</h2>
 
     <div>
-        
+      <p>Select a place to show the weather:</p>
+      <p>dropdown list with places to select</p>
+      <label for="City">City: </label>
+      <select name="city" id="city">
+        <option value="Toronto">Toronto</option>
+      </select>
     </div>
-</body>
 
-<footer>
-    <p class="copyright-text">© Copyright 2023 @CRBB </p>
-</footer>
+    <div id="weatherReport">
+      <ul>
+        <img src="" alt="" />
+        <li>descricao</li>
+        <li>temperatura max</li>
+        <li>temperatura min</li>
+      </ul>
+    </div>
+  </body>
 
-<!-- Our codes -->
-<script src="../Meteo/assets/js/main.js"></script>
+  <footer>
+    <br />
+    <hr />
+    <br />
+    <p class="copyright-text">© Copyright 2023 @CRBB</p>
+  </footer>
+
+  <!-- Our codes -->
+  <script src="../Meteo/assets/js/main.js"></script>
+</html>
