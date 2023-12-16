@@ -22,18 +22,22 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="row header fixed-top float-left justify-content-center">
       <header>
-        <h1>Meteo EuroWeather</h1>
+        <h1 class="display-4">Meteo EuroWeather</h1>
       </header>
     </div>
 
-    <div class="container">
-      <h2>7Days Weather Display</h2>
-    </div>
+    <div
+      class="row jumbotron container-fluid col d-flex justify-content-center"
+    >
+      <div class="row container-fluid align-items-start">
+        <div class="col justify-content-end">
+          <h2>7Days Weather Display</h2>
+        </div>
+      </div>
 
-    <main>
-      <div class="container">
+      <div class="row container-fluid main d-flex col justify-content-center">
         <p>Select a place to show the weather:</p>
         <label for="City">City: </label>
         <select name="city" id="city">
@@ -94,14 +98,16 @@
           <li>temperatura min</li>
         </ul>
       </div>
-    </main>
+    </div>
 
-    <footer>
-      <br />
-      <hr />
-      <br />
-      <p class="copyright-text">© Copyright 2023 @CRBB</p>
-    </footer>
+    <div class="row footer fixed-bottom justify-content-center">
+      <footer>
+        <br />
+        <hr />
+        <br />
+        <p class="copyright-text">© Copyright 2023 @CRBB</p>
+      </footer>
+    </div>
   </body>
 
   <!-- Our codes -->
